@@ -1,6 +1,7 @@
-# Arquivos gerados durante os testes
+# Arquivos gerados/usados durante os testes
 recebido.pdf
 meu_arquivo.pdf
+foto.jpg
 *.pyc
 __pycache__/
 
