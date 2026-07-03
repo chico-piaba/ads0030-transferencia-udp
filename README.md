@@ -13,26 +13,22 @@ rollback e um simulador de rede ruim.
 
 ```
 .
-├── entrega/                 # Versão ENXUTA (o que se submete no AVA)
-│   ├── servidor.py          # Receptor: recebe pacotes, monta recebido.pdf, rollback
-│   ├── cliente.py           # Emissor: envia com retransmissão, mede a vazão (Mbps)
-│   ├── GUIA_ENTREGA.md
-│   ├── roteiro_video.md
-│   └── respostas_pesquisa.md
-├── estudo/                  # Mesmas servidor.py/cliente.py, comentadas linha a linha
-│   ├── servidor.py
-│   └── cliente.py
-├── material_professor/      # Enunciado original + imagens (codigo01..06)
-└── contexto.md              # Enunciado completo (referência)
+├── servidor.py           # Receptor: recebe pacotes, monta recebido.pdf, rollback
+├── cliente.py            # Emissor: envia com retransmissão, mede a vazão (Mbps)
+├── GUIA_ENTREGA.md       # Guia da entrega + checklist
+├── roteiro_video.md      # Roteiro do vídeo (máx 7 min)
+└── respostas_pesquisa.md # Respostas das Pesquisas e Análises
 ```
+
+> Os códigos `servidor.py`/`cliente.py` estão **comentados linha a linha** para
+> facilitar o estudo e a defesa no vídeo.
 
 ## Como rodar
 
-Coloque uma imagem/PDF em `entrega/`, ajuste `NOME_ARQUIVO` no `cliente.py` e abra
+Coloque uma imagem/PDF na pasta, ajuste `NOME_ARQUIVO` no `cliente.py` e abra
 dois terminais:
 
 ```bash
-cd entrega
 python3 servidor.py   # Terminal 1
 python3 cliente.py    # Terminal 2
 ```

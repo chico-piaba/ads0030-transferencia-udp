@@ -68,7 +68,7 @@ fechar o cliente de propósito."
 ---
 
 ### Checklist antes de gravar
-- [ ] Imagem real na pasta `entrega/` + `NOME_ARQUIVO` ajustado no `cliente.py`.
+- [ ] Imagem real na pasta do projeto + `NOME_ARQUIVO` ajustado no `cliente.py`.
 - [ ] `SIMULAR_REDE_RUIM = True` nos DOIS arquivos.
 - [ ] Ensaiar uma vez (a perda é aleatória; rode até pegar uma boa sequência).
 - [ ] Terminal com fonte grande e áudio testado.

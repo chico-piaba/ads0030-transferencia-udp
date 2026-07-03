@@ -6,7 +6,7 @@ protocolo **SRTP** (Simple Reliable Transfer Protocol) com Stop-and-Wait:
 numeração de pacotes, ACK, timeout, retransmissão, controle de transação e
 simulador de rede ruim.
 
-## Arquivos (pasta `entrega/`)
+## Arquivos
 | Arquivo | O que é |
 |---------|---------|
 | `servidor.py` | Receptor — recebe os pacotes, monta `recebido.pdf`, faz rollback. |
@@ -15,8 +15,8 @@ simulador de rede ruim.
 | `respostas_pesquisa.md` | Respostas das Pesquisas 4.1–8.1 e das Questões 10.1–10.3. |
 | `GUIA_ENTREGA.md` | Este guia. |
 
-> A pasta `../estudo/` tem as **mesmas** `servidor.py`/`cliente.py` porém cheias de
-> comentários didáticos. Estude por lá; **entregue** os arquivos enxutos de `entrega/`.
+> Os códigos `servidor.py`/`cliente.py` estão **comentados linha a linha** para
+> facilitar o estudo e a defesa no vídeo.
 
 ## ✅ Tarefas do enunciado — TODAS implementadas
 - [x] Protocolo SRTP: cabeçalho `!IIB` (9 bytes) + payload (≤1024 B). ACK = `!I`.
@@ -30,17 +30,17 @@ simulador de rede ruim.
 - [x] Respostas das Pesquisas (4.1, 4.2, 4.3, 5.1, 8.1) e Análises (10.1–10.3).
 
 ## ✅ Checklist do que VOCÊ ainda faz
-1. [ ] Colocar uma **imagem real** (`foto.jpg`) em `entrega/` e ajustar
+1. [ ] Colocar uma **imagem real** (`foto.jpg`) na pasta e ajustar
    `NOME_ARQUIVO` no `cliente.py`.
 2. [ ] Medir a vazão real (Questão 10.1): rodar com `SIMULAR_REDE_RUIM = False` e
    anotar os Mbps (teste com arquivo grande e pequeno).
 3. [ ] Reescrever as respostas com suas palavras (`respostas_pesquisa.md`).
 4. [ ] Gravar o vídeo (`roteiro_video.md`) — máx 7 min, perda LIGADA, mostrar o
    rollback no final.
-5. [ ] Compactar a pasta `entrega/` para submeter no AVA.
+5. [ ] Compactar os arquivos para submeter no AVA.
 
 ## Como rodar
-Dois terminais dentro de `entrega/`:
+Dois terminais na pasta do projeto:
 ```bash
 python3 servidor.py   # Terminal 1
 python3 cliente.py    # Terminal 2
