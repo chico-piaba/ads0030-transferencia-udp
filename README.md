@@ -15,8 +15,6 @@ rollback e um simulador de rede ruim.
 .
 ├── servidor.py           # Receptor: recebe pacotes, monta recebido.pdf, rollback
 ├── cliente.py            # Emissor: envia com retransmissão, mede a vazão (Mbps)
-├── GUIA_ENTREGA.md       # Guia da entrega + checklist
-├── roteiro_video.md      # Roteiro do vídeo (máx 7 min)
 └── respostas_pesquisa.md # Respostas das Pesquisas e Análises
 ```
 
